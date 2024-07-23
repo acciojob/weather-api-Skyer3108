@@ -12,8 +12,8 @@ btn.addEventListener('click',async()=>{
 
 	const city='London'
 
-	const apiUrt=`https://api.openweathermap.org/data/2.5/weather?q=London&appid=52cfc6f295dc14cb0448c43506812757`
-
+	// const apiUrt=`https://api.openweathermap.org/data/2.5/weather?q=London&appid=52cfc6f295dc14cb0448c43506812757`
+const apiUrt="https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=e467712b257e418838be97cc881a71de"
 	
 	try{
 

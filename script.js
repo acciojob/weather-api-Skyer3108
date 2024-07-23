@@ -19,18 +19,13 @@ btn.addEventListener('click',async()=>{
 
 		console.log('llll')
 
-		const res=await fetch('apiUrt', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
+		const res=await fetch(apiUrt)
 		console.log('llll')
 
 		const data=await res.json()
 		console.log('llll')
 
-		display.textContent=`Current weather in London: ${data}`
+		display.textContent=`Current weather in London: ${data.weather[0].main}`
 		
 	}catch(err){
 
